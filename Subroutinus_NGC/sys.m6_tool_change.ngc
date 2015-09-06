@@ -5,7 +5,7 @@ O<m6_tool_change> sub
 
 (DEBUG, _selected_tool = #<_selected_tool>)
 (DEBUG, _current_tool = #<_current_tool>)
-O<replace_tool> call [1]
+O<sys.replace_tool> call [1]
 
 (change_lenght_comp)
 (change_radius_comp)
