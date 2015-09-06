@@ -1,0 +1,21 @@
+O<basket_1.action> sub
+(DEBUG, Called basket_1.action function)
+
+O<basket_1.eject_tool> call
+O<basket_1.inject_tool> call
+
+O<basket_1.action> endsub
+//
+//(MSG, Called basket_1_action function)
+//(O<goto_basket_1_poc> call)
+//O<select_action>     if [  EQ 0 ]
+//(DEBUG< Uncnown operation )
+//M02
+//O<select_action> elseif [  EQ 1 ]
+//O<basket_1_inject_tool> call [0] [#<_pocket>
+//O<select_action> elseif [  EQ 2 ]
+//O<basket_1_eject_tool> call [0] [#<_pocket>
+//O<select_action> else
+//(DEBUG< Uncnown operation )
+//M02
+//O<select_action> endif
